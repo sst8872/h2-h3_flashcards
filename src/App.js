@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { FlashCardArray } from 'react-flashcards';
+import flashcards from "./cardData_h2-h3";
+import './customStyle.css';
 
-function App() {
+const MyFlashcardComponent = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+      <FlashCardArray
+          cards={flashcards}
+          controls={true}
+          showCount={true}
+          autoPlay={true}
+          onCardChange={(id, index) => console.log(`Card change detected: ID ${id}, Index: ${index}`)}
+          onCardFlip={(id, index, state) => console.log(`Card flipped: ID ${id}, Index: ${index}, Flipped: ${state}`)}
 
-export default App;
+          // Other props...
+      />
+  );
+};
+
+export default MyFlashcardComponent;
