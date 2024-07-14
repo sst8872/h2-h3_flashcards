@@ -6,7 +6,7 @@
 
 .FlashcardWrapper__item--content p {
     font-family: "Nanum Gothic Coding", monospace;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     font-size: 2.5em;
 }
@@ -18,7 +18,6 @@
 
 @media (max-width: 768px) {
     .FlashcardWrapper {
-
         height: 100%;
         width: 100%;
     }
