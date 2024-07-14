@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
 
-.FlashcardArrayContainer {
-    width: 100%;
-    box-sizing: border-box;
-}
+
 
 .FlashcardWrapper__item--content h1 {
     font-size: 4em;
@@ -19,12 +16,4 @@
 .FlashcardWrapper__item--content {
     background-color: rgba(238, 144, 222, 0.2);
 
-}
-
-@media (max-width: 600px) {
-    .FlashcardWrapper  {
-        height: 100%;
-        width: 100%;
-        box-sizing: border-box;
-    }
 }
