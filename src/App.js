@@ -39,8 +39,8 @@ const MyFlashcardComponent = () => {
 
 
   return (
-      <div className="flashcard-container">
-          <h3>M1-M2</h3>
+      <div className="flashcards_container">
+          <h3>H2 - H3</h3>
           <FlashCardArray
               width={600}
               cards={flashcards}
