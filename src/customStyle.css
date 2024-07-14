@@ -17,7 +17,7 @@
 }
 
 @media (max-width: 768px) {
-    .FlashcardWrapper {
+    .FlashcardArrayContainer__CardFrame {
         height: 100%;
         width: 100%;
     }
