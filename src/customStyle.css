@@ -17,3 +17,12 @@
     background-color: rgba(238, 144, 222, 0.2);
 
 }
+
+
+
+@media (max-width: 768px) {
+    .FlashcardWrapper  {
+        width: 100%; /* Full width for smaller displays */
+        max-width: none; /* Override max-width for smaller screens */
+    }
+}
