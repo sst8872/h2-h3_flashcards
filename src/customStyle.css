@@ -25,6 +25,7 @@
 @media (max-width: 768px) {
     .FlashcardWrapper  {
         width: 100% !important; /* Full width for smaller displays */
+        height: 100%;
         max-width: none; /* Override max-width for smaller screens */
     }
 }
