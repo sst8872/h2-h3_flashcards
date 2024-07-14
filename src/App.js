@@ -45,7 +45,6 @@ const MyFlashcardComponent = () => {
                       <p style={{ margin: 0 }}>H2 - H3</p>
                   </div>
               </div>}
-              width={700}
               cards={flashcards}
               controls={true}
               showCount={true}
