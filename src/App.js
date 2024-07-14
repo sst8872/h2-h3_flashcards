@@ -39,9 +39,12 @@ const MyFlashcardComponent = () => {
 
 
   return (
-      <div className="flashcards_container">
-          <h3>H2 - H3</h3>
           <FlashCardArray
+              label={   <div className="labelContainer">
+                  <div>
+                      <p style={{ margin: 0 }}>H2 - H3</p>
+                  </div>
+              </div>}
               width={600}
               cards={flashcards}
               controls={true}
@@ -52,7 +55,6 @@ const MyFlashcardComponent = () => {
 
               // Other props...
           />
-      </div>
   );
 };
 
