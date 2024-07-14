@@ -6,9 +6,9 @@
 
 .FlashcardWrapper__item--content p {
     font-family: "Nanum Gothic Coding", monospace;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .FlashcardWrapper__item--content {
