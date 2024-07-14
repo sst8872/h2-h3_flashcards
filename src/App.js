@@ -4,6 +4,32 @@ import flashcards from "./cardData_h2-h3";
 import './customStyle.css';
 
 const MyFlashcardComponent = () => {
+
+    useEffect(() => {
+        const container = document.querySelector('.FlashcardArrayContainer');
+        if (container) {
+            container.style.width = '700px'; // Override inline style
+            container.style.maxWidth = '100%'; // Ensure it does not overflow
+        }
+
+        const handleResize = () => {
+            if (window.innerWidth <= 768) {
+                container.style.width = '100%'; // Adjust for smaller screens
+                container.style.maxWidth = 'none'; // Remove max-width restriction
+            } else {
+                container.style.width = '600px'; // Reset for larger screens
+                container.style.maxWidth = '100%'; // Ensure it does not overflow
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize(); // Initial check
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     useEffect(() => {
         const handleBookmarkClick = (event) => {
             event.stopPropagation();
