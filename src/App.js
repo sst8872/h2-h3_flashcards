@@ -17,7 +17,7 @@ const MyFlashcardComponent = () => {
                 container.style.width = '100%'; // Adjust for smaller screens
                 container.style.maxWidth = 'none'; // Remove max-width restriction
             } else {
-                container.style.width = '600px'; // Reset for larger screens
+                container.style.width = '700px'; // Reset for larger screens
                 container.style.maxWidth = '100%'; // Ensure it does not overflow
             }
         };

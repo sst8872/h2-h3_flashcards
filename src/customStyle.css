@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
 
+.FlashcardArrayContainer {
+    padding-top: 2em;
+
+}
 
 .FlashcardWrapper__item--content h1 {
     font-size: 4em;
