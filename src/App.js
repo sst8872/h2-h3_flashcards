@@ -66,7 +66,7 @@ const MyFlashcardComponent = () => {
 
     return (
         <div className="title" >
-            <p className="title_grade">고2 - 고3</p>
+            <p className="title_grade">고2 - 고3&nbsp;</p>
             <FlashCardArray
                 cards={flashcards}
                 controls={true}
