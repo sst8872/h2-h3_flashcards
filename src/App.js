@@ -64,24 +64,22 @@ const MyFlashcardComponent = () => {
 
 
 
-  return (
-          <FlashCardArray
-              label={   <div className="labelContainer">
-                  <div>
-                      <p style={{ margin: 0 }}>H2 - H3</p>
-                  </div>
-              </div>}
-              cards={flashcards}
-              controls={true}
-              showCount={true}
-              autoPlay={true}
-              timerDuration={3}
-              onCardChange={(id, index) => console.log(`Card change detected: ID ${id}, Index: ${index}`)}
-              onCardFlip={(id, index, state) => console.log(`Card flipped: ID ${id}, Index: ${index}, Flipped: ${state}`)}
+    return (
+        <div className="title" >
+            <p className="title_grade">고2 - 고3</p>
+            <FlashCardArray
+                cards={flashcards}
+                controls={true}
+                showCount={true}
+                showBookMark={true}
+                timerDuration={3}
+                onCardChange={(id, index) => console.log(`Card change detected: ID ${id}, Index: ${index}`)}
+                onCardFlip={(id, index, state) => console.log(`Card flipped: ID ${id}, Index: ${index}, Flipped: ${state}`)}
 
-              // Other props...
-          />
-  );
+                // Other props...
+            />
+        </div>
+    );
 };
 
 export default MyFlashcardComponent;
